@@ -1,4 +1,9 @@
-
+data/raw/*.csv
+__pycache__/
+*.pyc
+.env
+dbt_project/target/
+dbt_project/dbt_packages/
 target/
 dbt_packages/
 logs/
