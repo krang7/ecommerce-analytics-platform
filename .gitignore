@@ -7,3 +7,4 @@ dbt_project/dbt_packages/
 target/
 dbt_packages/
 logs/
+dbt_internal_packages/
