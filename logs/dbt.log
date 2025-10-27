@@ -158,3 +158,288 @@ Happy modeling!
 [0m09:34:52.449261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015BCD586DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015BCF1BE4B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015BCD9BA4B0>]}
 [0m09:34:52.449261 [debug] [MainThread]: Flushing usage events
 [0m09:34:53.542974 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:17.133400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016F648C5820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016F647C77D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016F648C71A0>]}
+
+
+============================== 13:52:17.141780 | 58d13ce9-d132-493e-8621-5c15b20a9df5 ==============================
+[0m13:52:17.141780 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:52:17.143075 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\krang\\OneDrive\\Desktop\\Projects\\ecommerce-analytics-platform\\logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\krang\\.dbt', 'invocation_command': 'dbt debug', 'printer_width': '80', 'target_path': 'None'}
+[0m13:52:17.179112 [info ] [MainThread]: dbt version: 1.10.13
+[0m13:52:17.180112 [info ] [MainThread]: python version: 3.12.5
+[0m13:52:17.180112 [info ] [MainThread]: python path: C:\Users\krang\AppData\Local\Programs\Python\Python312\python.exe
+[0m13:52:17.181186 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m13:52:17.410251 [info ] [MainThread]: Using profiles dir at C:\Users\krang\.dbt
+[0m13:52:17.411253 [info ] [MainThread]: Using profiles.yml file at C:\Users\krang\.dbt\profiles.yml
+[0m13:52:17.411253 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\dbt_project.yml
+[0m13:52:17.413263 [info ] [MainThread]: adapter type: postgres
+[0m13:52:17.413263 [info ] [MainThread]: adapter version: 1.9.1
+[0m13:52:17.503151 [info ] [MainThread]: Configuration:
+[0m13:52:17.504151 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:52:17.504151 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:52:17.504151 [info ] [MainThread]: Required dependencies:
+[0m13:52:17.505256 [debug] [MainThread]: Executing "git --help"
+[0m13:52:17.545903 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:52:17.546955 [debug] [MainThread]: STDERR: "b''"
+[0m13:52:17.546955 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:52:17.546955 [info ] [MainThread]: Connection:
+[0m13:52:17.548253 [info ] [MainThread]:   host: localhost
+[0m13:52:17.548253 [info ] [MainThread]:   port: 5432
+[0m13:52:17.548253 [info ] [MainThread]:   user: postgres
+[0m13:52:17.549256 [info ] [MainThread]:   database: ecommerce_raw
+[0m13:52:17.549256 [info ] [MainThread]:   schema: public
+[0m13:52:17.549256 [info ] [MainThread]:   connect_timeout: 10
+[0m13:52:17.549256 [info ] [MainThread]:   role: None
+[0m13:52:17.550258 [info ] [MainThread]:   search_path: None
+[0m13:52:17.550258 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:52:17.550258 [info ] [MainThread]:   sslmode: prefer
+[0m13:52:17.551287 [info ] [MainThread]:   sslcert: None
+[0m13:52:17.551287 [info ] [MainThread]:   sslkey: None
+[0m13:52:17.551287 [info ] [MainThread]:   sslrootcert: None
+[0m13:52:17.552291 [info ] [MainThread]:   application_name: dbt
+[0m13:52:17.552291 [info ] [MainThread]:   retries: 1
+[0m13:52:17.553310 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m13:52:17.996430 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:52:20.252979 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:52:20.252979 [debug] [MainThread]: On debug: select 1 as id
+[0m13:52:20.254484 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:52:20.327858 [debug] [MainThread]: SQL status: SELECT 1 in 0.073 seconds
+[0m13:52:20.329094 [debug] [MainThread]: On debug: Close
+[0m13:52:20.329094 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:52:20.329094 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:52:20.330110 [debug] [MainThread]: Command `python -m dbt.cli.main debug` succeeded at 13:52:20.330110 after 3.34 seconds
+[0m13:52:20.331320 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:52:20.331320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016F64B432F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016F64BC5DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016F64F1DDC0>]}
+[0m13:52:20.331320 [debug] [MainThread]: Flushing usage events
+[0m13:52:21.476022 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:36.981169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A379A8D400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3786A02C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3795BC140>]}
+
+
+============================== 13:52:36.985401 | 23d04d2e-9f9c-489e-beca-796d8cce011f ==============================
+[0m13:52:36.985401 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:52:36.985401 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'printer_width': '80', 'invocation_command': 'dbt seed --show', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\krang\\.dbt', 'warn_error': 'None', 'log_path': 'C:\\Users\\krang\\OneDrive\\Desktop\\Projects\\ecommerce-analytics-platform\\logs', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m13:52:37.328325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '23d04d2e-9f9c-489e-beca-796d8cce011f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A37AEAF740>]}
+[0m13:52:37.384438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '23d04d2e-9f9c-489e-beca-796d8cce011f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A37AE8C890>]}
+[0m13:52:37.386471 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m13:52:37.725091 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:52:37.725850 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:52:37.727102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '23d04d2e-9f9c-489e-beca-796d8cce011f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A37B12FA70>]}
+[0m13:52:39.767472 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds
+[0m13:52:39.776531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '23d04d2e-9f9c-489e-beca-796d8cce011f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A37B6A08C0>]}
+[0m13:52:39.847199 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\manifest.json
+[0m13:52:39.867678 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\semantic_manifest.json
+[0m13:52:39.897899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '23d04d2e-9f9c-489e-beca-796d8cce011f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A37B5918B0>]}
+[0m13:52:39.898902 [info ] [MainThread]: Found 3 models, 4 data tests, 9 sources, 447 macros
+[0m13:52:39.898902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '23d04d2e-9f9c-489e-beca-796d8cce011f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A37B67E390>]}
+[0m13:52:39.900977 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:52:39.900977 [debug] [MainThread]: Command end result
+[0m13:52:39.919796 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\manifest.json
+[0m13:52:39.921893 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\semantic_manifest.json
+[0m13:52:39.926256 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\run_results.json
+[0m13:52:39.926905 [info ] [MainThread]: 
+[0m13:52:39.926905 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:52:39.926905 [info ] [MainThread]: 
+[0m13:52:39.928360 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m13:52:39.929363 [debug] [MainThread]: Command `python -m dbt.cli.main seed` succeeded at 13:52:39.929363 after 3.05 seconds
+[0m13:52:39.929363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3783EB050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3785765A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A378EDD8E0>]}
+[0m13:52:39.930363 [debug] [MainThread]: Flushing usage events
+[0m13:52:40.947995 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:00.615416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113941D0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113947BEC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021139479A30>]}
+
+
+============================== 13:53:00.619419 | 19a8583c-63ff-49e0-9fad-398eb289877a ==============================
+[0m13:53:00.619419 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:53:00.620420 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_format': 'default', 'target_path': 'None', 'use_colors': 'True', 'profiles_dir': 'C:\\Users\\krang\\.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\Users\\krang\\OneDrive\\Desktop\\Projects\\ecommerce-analytics-platform\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt build -s stg_customers --full-refresh', 'printer_width': '80', 'write_json': 'True'}
+[0m13:53:00.834086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '19a8583c-63ff-49e0-9fad-398eb289877a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113952B800>]}
+[0m13:53:00.889184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '19a8583c-63ff-49e0-9fad-398eb289877a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021139A2B7A0>]}
+[0m13:53:00.889184 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m13:53:01.194570 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:53:01.354967 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:53:01.354967 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:53:01.359996 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds
+[0m13:53:01.393320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '19a8583c-63ff-49e0-9fad-398eb289877a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113B70FA10>]}
+[0m13:53:01.460357 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\manifest.json
+[0m13:53:01.463389 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\semantic_manifest.json
+[0m13:53:01.506939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '19a8583c-63ff-49e0-9fad-398eb289877a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113BA4F470>]}
+[0m13:53:01.507939 [info ] [MainThread]: Found 3 models, 4 data tests, 9 sources, 447 macros
+[0m13:53:01.509444 [info ] [MainThread]: 
+[0m13:53:01.509444 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:53:01.510459 [info ] [MainThread]: 
+[0m13:53:01.510459 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:53:01.511508 [debug] [ThreadPool]: Acquiring new postgres connection 'list_ecommerce_raw'
+[0m13:53:01.601588 [debug] [ThreadPool]: Using postgres connection "list_ecommerce_raw"
+[0m13:53:01.601588 [debug] [ThreadPool]: On list_ecommerce_raw: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ecommerce_raw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:53:01.601588 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:01.769388 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.167 seconds
+[0m13:53:01.770443 [debug] [ThreadPool]: On list_ecommerce_raw: Close
+[0m13:53:01.774446 [debug] [ThreadPool]: Acquiring new postgres connection 'list_ecommerce_raw_public'
+[0m13:53:01.779073 [debug] [ThreadPool]: Using postgres connection "list_ecommerce_raw_public"
+[0m13:53:01.780088 [debug] [ThreadPool]: On list_ecommerce_raw_public: BEGIN
+[0m13:53:01.780088 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:01.815409 [debug] [ThreadPool]: SQL status: BEGIN in 0.036 seconds
+[0m13:53:01.816511 [debug] [ThreadPool]: Using postgres connection "list_ecommerce_raw_public"
+[0m13:53:01.816511 [debug] [ThreadPool]: On list_ecommerce_raw_public: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ecommerce_raw_public"} */
+select
+      'ecommerce_raw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'ecommerce_raw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'ecommerce_raw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m13:53:01.832192 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.015 seconds
+[0m13:53:01.833194 [debug] [ThreadPool]: On list_ecommerce_raw_public: ROLLBACK
+[0m13:53:01.834193 [debug] [ThreadPool]: On list_ecommerce_raw_public: Close
+[0m13:53:01.839579 [debug] [MainThread]: Using postgres connection "master"
+[0m13:53:01.839579 [debug] [MainThread]: On master: BEGIN
+[0m13:53:01.839579 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:53:01.875319 [debug] [MainThread]: SQL status: BEGIN in 0.035 seconds
+[0m13:53:01.875996 [debug] [MainThread]: Using postgres connection "master"
+[0m13:53:01.875996 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m13:53:01.893068 [debug] [MainThread]: SQL status: SELECT 0 in 0.017 seconds
+[0m13:53:01.894072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19a8583c-63ff-49e0-9fad-398eb289877a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113BA4C5C0>]}
+[0m13:53:01.895081 [debug] [MainThread]: On master: ROLLBACK
+[0m13:53:01.895081 [debug] [MainThread]: Using postgres connection "master"
+[0m13:53:01.895786 [debug] [MainThread]: On master: BEGIN
+[0m13:53:01.895786 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m13:53:01.895786 [debug] [MainThread]: On master: COMMIT
+[0m13:53:01.895786 [debug] [MainThread]: Using postgres connection "master"
+[0m13:53:01.895786 [debug] [MainThread]: On master: COMMIT
+[0m13:53:01.897174 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m13:53:01.897174 [debug] [MainThread]: On master: Close
+[0m13:53:01.902189 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_customers
+[0m13:53:01.903454 [info ] [Thread-1 (]: 1 of 1 START sql view model public.stg_customers ............................... [RUN]
+[0m13:53:01.903454 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.dbt_project.stg_customers'
+[0m13:53:01.903454 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_customers
+[0m13:53:01.910004 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_customers"
+[0m13:53:01.912010 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_customers
+[0m13:53:01.943474 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_customers"
+[0m13:53:01.946203 [debug] [Thread-1 (]: Using postgres connection "model.dbt_project.stg_customers"
+[0m13:53:01.946203 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: BEGIN
+[0m13:53:01.947435 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:53:01.988992 [debug] [Thread-1 (]: SQL status: BEGIN in 0.041 seconds
+[0m13:53:01.988992 [debug] [Thread-1 (]: Using postgres connection "model.dbt_project.stg_customers"
+[0m13:53:01.990013 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+
+  create view "ecommerce_raw"."public"."stg_customers__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select * from "ecommerce_raw"."public"."olist_customers_dataset"
+),
+
+renamed as (
+    select
+        customer_id,
+        customer_unique_id,
+        customer_zip_code_prefix as zip_code,
+        customer_city as city,
+        customer_state as state
+    from source
+)
+
+select * from renamed
+  );
+[0m13:53:02.010163 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.020 seconds
+[0m13:53:02.015219 [debug] [Thread-1 (]: Using postgres connection "model.dbt_project.stg_customers"
+[0m13:53:02.015219 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+alter table "ecommerce_raw"."public"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m13:53:02.017322 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:53:02.029014 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: COMMIT
+[0m13:53:02.030017 [debug] [Thread-1 (]: Using postgres connection "model.dbt_project.stg_customers"
+[0m13:53:02.030017 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: COMMIT
+[0m13:53:02.031979 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:53:02.037035 [debug] [Thread-1 (]: Applying DROP to: "ecommerce_raw"."public"."stg_customers__dbt_backup"
+[0m13:53:02.041092 [debug] [Thread-1 (]: Using postgres connection "model.dbt_project.stg_customers"
+[0m13:53:02.041092 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_customers"} */
+drop view if exists "ecommerce_raw"."public"."stg_customers__dbt_backup" cascade
+[0m13:53:02.042709 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:53:02.044492 [debug] [Thread-1 (]: On model.dbt_project.stg_customers: Close
+[0m13:53:02.045743 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '19a8583c-63ff-49e0-9fad-398eb289877a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211370DD190>]}
+[0m13:53:02.047037 [info ] [Thread-1 (]: 1 of 1 OK created sql view model public.stg_customers .......................... [[32mCREATE VIEW[0m in 0.14s]
+[0m13:53:02.048048 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_customers
+[0m13:53:02.049308 [debug] [MainThread]: Using postgres connection "master"
+[0m13:53:02.049308 [debug] [MainThread]: On master: BEGIN
+[0m13:53:02.049308 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:53:02.085912 [debug] [MainThread]: SQL status: BEGIN in 0.036 seconds
+[0m13:53:02.086939 [debug] [MainThread]: On master: COMMIT
+[0m13:53:02.086939 [debug] [MainThread]: Using postgres connection "master"
+[0m13:53:02.086939 [debug] [MainThread]: On master: COMMIT
+[0m13:53:02.087943 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m13:53:02.087943 [debug] [MainThread]: On master: Close
+[0m13:53:02.087943 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:53:02.087943 [debug] [MainThread]: Connection 'list_ecommerce_raw' was properly closed.
+[0m13:53:02.088965 [debug] [MainThread]: Connection 'list_ecommerce_raw_public' was properly closed.
+[0m13:53:02.088965 [debug] [MainThread]: Connection 'model.dbt_project.stg_customers' was properly closed.
+[0m13:53:02.088965 [info ] [MainThread]: 
+[0m13:53:02.089965 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.58 seconds (0.58s).
+[0m13:53:02.089965 [debug] [MainThread]: Command end result
+[0m13:53:02.109547 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\manifest.json
+[0m13:53:02.112051 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\semantic_manifest.json
+[0m13:53:02.117157 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\krang\OneDrive\Desktop\Projects\ecommerce-analytics-platform\target\run_results.json
+[0m13:53:02.118156 [info ] [MainThread]: 
+[0m13:53:02.118156 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:53:02.119244 [info ] [MainThread]: 
+[0m13:53:02.119244 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:53:02.120248 [debug] [MainThread]: Command `python -m dbt.cli.main build` succeeded at 13:53:02.120248 after 1.61 seconds
+[0m13:53:02.121254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113A05BBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113A05B740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002113B4F35F0>]}
+[0m13:53:02.121254 [debug] [MainThread]: Flushing usage events
+[0m13:53:03.852989 [debug] [MainThread]: An error was encountered while trying to flush usage events

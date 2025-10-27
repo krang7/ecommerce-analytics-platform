@@ -7,4 +7,7 @@ dbt_project/dbt_packages/
 target/
 dbt_packages/
 logs/
+.dbt/
+.vscode/
 dbt_internal_packages/
+dbt_project_backup/
