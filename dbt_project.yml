@@ -12,19 +12,22 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
+target-path: "target"
+log-path: "logs"
 
-# Folders removed by `dbt clean`
-clean-targets:
-  - "target"
-  - "dbt_packages"
 
 # Ensure seeds land where your sources expect them
-seeds:
-  +database: ecommerce_raw
-  +schema: public
-  +quote_columns: true
+# ... lines 15-18
+
+# Ensure seeds land where your sources expect them
+#seeds:
+  # The following is directly under seeds:
+  #dbt_project:
+    #+database: ecommerce_raw
+    #+schema: public
+    #+quote_columns: true
 
 # Default model config (applies to all models in this project)
-models:
-  dbt_project:
-    +materialized: view
+# ...
+
+# Default model config (applies to all models in this project

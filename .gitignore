@@ -1,13 +1,28 @@
+# --- data you don't want in git ---
 data/raw/*.csv
-__pycache__/
-*.pyc
-.env
-dbt_project/target/
-dbt_project/dbt_packages/
+
+# --- dbt build artifacts ---
 target/
 dbt_packages/
 logs/
-.dbt/
-.vscode/
 dbt_internal_packages/
+.dbt/
+
+# --- local/editor cruft ---
+__pycache__/
+*.pyc
+.env
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.ipynb_checkpoints/
+.idea/
+.mypy_cache/
+.pytest_cache/
+.venv/
+venv/
+Thumbs.db
+desktop.ini
+
+# --- temporary backup from earlier flattening ---
 dbt_project_backup/
