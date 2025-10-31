@@ -1,0 +1,103 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customer dimension with lifetime metrics and segmentation"
+    columns:
+      - name: customer_id
+        description: "Primary key - unique customer identifier"
+        tests:
+          - not_null
+      
+      - name: customer_unique_id
+        description: "Unique customer ID across the platform"
+        tests:
+          - not_null
+      
+      - name: lifetime_orders
+        description: "Total number of orders placed by customer"
+        tests:
+          - not_null
+      
+      - name: lifetime_value
+        description: "Total amount spent by customer"
+        tests:
+          - not_null
+      
+      - name: customer_segment
+        description: "RFM-based customer segment"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Champion', 'Loyal', 'Potential', 'At Risk', 'Needs Attention']
+
+  - name: dim_products
+    description: "Product dimension with category and sales metrics"
+    columns:
+      - name: product_id
+        description: "Primary key - unique product identifier"
+        tests:
+          - unique
+          - not_null
+      
+      - name: product_category
+        description: "Product category in English"
+      
+      - name: times_sold
+        description: "Number of times product was sold"
+        tests:
+          - not_null
+      
+      - name: sales_category
+        description: "Product categorization by sales volume"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Best Seller', 'Popular', 'Regular', 'Slow Moving', 'Never Sold']
+
+  - name: dim_sellers
+    description: "Seller dimension with location and performance metrics"
+    columns:
+      - name: seller_id
+        description: "Primary key - unique seller identifier"
+        tests:
+          - unique
+          - not_null
+      
+      - name: state
+        description: "Seller state location"
+        tests:
+          - not_null
+      
+      - name: total_orders
+        description: "Total orders fulfilled by seller"
+        tests:
+          - not_null
+      
+      - name: seller_tier
+        description: "Seller performance tier"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Top Seller', 'High Volume', 'Active', 'Low Volume', 'Inactive']
+
+  - name: dim_time
+    description: "Date dimension for time-based analysis"
+    columns:
+      - name: date_day
+        description: "Primary key - unique date"
+        tests:
+          - unique
+          - not_null
+      
+      - name: year
+        description: "Year"
+        tests:
+          - not_null
+      
+      - name: is_weekend
+        description: "Flag for weekend days"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
